@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 app.get('/json', function (req, res) {
     return res.json(contents)
 });
-app.listen(8080, function (err) {
+app.listen(process.env.PORT || 3000, function (err) {
     if (err) {
         console.log(err);
     } else {
